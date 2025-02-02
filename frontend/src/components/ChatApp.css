@@ -1,0 +1,299 @@
+.whatsapp-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.sidebar {
+  width: 30%;
+  min-width: 300px;
+  background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  padding: 10px 16px;
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.header-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.search-box {
+  padding: 8px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 0 8px;
+}
+
+.search-icon {
+  color: #54656f;
+  margin-right: 8px;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 8px 12px;
+  border: none;
+  background: none;
+  color: #111b21;
+  font-size: 15px;
+  outline: none;
+}
+
+.search-container input::placeholder {
+  color: #667781;
+}
+
+.contacts-list {
+  flex: 1;
+  overflow-y: auto;
+  background-color: #ffffff;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.contact-item:hover {
+  background-color: #f5f6f6;
+}
+
+.contact-item.selected {
+  background-color: #f0f2f5;
+}
+
+.contact-info {
+  margin-left: 15px;
+  flex: 1;
+}
+
+.contact-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.contact-header h3 {
+  margin: 0;
+  font-size: 17px;
+  color: #111b21;
+}
+
+.last-message {
+  margin: 0;
+  font-size: 14px;
+  color: #667781;
+}
+
+.chat-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #efeae2;
+  position: relative;
+}
+
+.chat-header {
+  padding: 10px 16px;
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.chat-header-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info {
+  margin-left: 15px;
+}
+
+.user-info h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #111b21;
+}
+
+.user-info p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #667781;
+}
+
+.messages-container {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #efeae2;
+}
+
+.message {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.message.sent {
+  justify-content: flex-end;
+}
+
+.message-content {
+  max-width: 65%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  word-wrap: break-word;
+  position: relative;
+}
+
+.message.sent .message-content {
+  background-color: #d9fdd3;
+  margin-left: auto;
+}
+
+.message.received .message-content {
+  background-color: #ffffff;
+}
+
+.message-file {
+  margin-top: 8px;
+}
+
+.message-file img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.message-file a {
+  color: #039be5;
+  text-decoration: none;
+}
+
+.chat-input {
+  padding: 10px;
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.message-input {
+  flex: 1;
+  padding: 9px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #111b21;
+  font-size: 15px;
+  outline: none;
+}
+
+.message-input::placeholder {
+  color: #667781;
+}
+
+.emoji-picker {
+  position: absolute;
+  bottom: 70px;
+  left: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  z-index: 1000;
+}
+
+.emoji-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.emoji-item {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.emoji-item:hover {
+  background-color: #f0f2f5;
+}
+
+.no-chat-selected {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f2f5;
+  color: #667781;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-content h3 {
+  margin: 16px 0;
+  color: #111b21;
+}
+
+.profile-content p {
+  color: #667781;
+  margin: 8px 0;
+}
+
+.about-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #111b21;
+  font-size: 15px;
+  outline: none;
+}
+
+.about-input::placeholder {
+  color: #667781;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e0e0e0;
+  border-radius: 3px;
+}
